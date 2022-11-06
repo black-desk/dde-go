@@ -1,5 +1,7 @@
 # go for DDE
 
+English | [简体中文](./README.zh_CN.md)
+
 This project is aim to provide a golang develop environment quick setup for
 deepin (v20) desktop environment.
 
