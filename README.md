@@ -21,11 +21,16 @@ goenv install 1.15.9
 Your go workspace will be ready at GOPATH mode in `./.gopath`, as the GOPATH
 environment variable set.
 
-This setup will not take effect when you are out side of this directory. So your
-other gomod-base projects will work just like before.
+## Note
 
-You might recive a warning from gopls for the lastest version of gopls not
-support 1.15.9, but it seems to work fine.
+1. This setup will not take effect when you are out side of this directory. So
+   your other gomod-base projects will work just like before.
+
+2. You might recive a warning from gopls for the lastest version of gopls not
+   support 1.15.9, but it seems to work fine.
+
+3. As cgo is used in dde, you have to install other non-go build dependencies
+   yourself.
 
 [==link1==]: https://github.com/syndbg/goenv
 [==link2==]: https://github.com/black-desk/dotfiles/tree/master/private_dot_local/lib/goenv_hook
