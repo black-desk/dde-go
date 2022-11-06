@@ -1,15 +1,31 @@
-# golang develop environment quick setup for deepin v20
+# go for DDE
 
-[goenv][==link1==] and [some hooks][==link2==] needed.
+This project is aim to provide a golang develop environment quick setup for
+deepin (v20) desktop environment.
 
-Try to setup goenv just [like I did][==link3==].
+As deepin golang version stuck at 1.15.9, and all dde releated golang project do
+not use gomod at all, it's quite a little bit hard to setup a workspace to make
+gopls working.
+
+You will need [goenv][==link1==] and [some hooks][==link2==] for it.
+
+Try to setup goenv just [like I did][==link3==], to let the hooks work.
 
 Then run:
 
-```bash
+``` bash
 goenv install 1.15.9
 ./scripts/setup
 ```
+
+Your go workspace will be ready at GOPATH mode in `./.gopath`, as the GOPATH
+environment variable set.
+
+This setup will not take effect when you are out side of this directory. So your
+other gomod-base projects will work just like before.
+
+You might recive a warning from gopls for the lastest version of gopls not
+support 1.15.9, but it seems to work fine.
 
 [==link1==]: https://github.com/syndbg/goenv
 [==link2==]: https://github.com/black-desk/dotfiles/tree/master/private_dot_local/lib/goenv_hook
