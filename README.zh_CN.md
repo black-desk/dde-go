@@ -1,6 +1,6 @@
 # DDE的go配置
 
-[English](./READMD.md) | 简体中文
+[English](./README.md) | 简体中文
 
 这个项目的目的是快速地为v20版本的深度桌面环境中的所有go语言项目创建开发环境.
 
