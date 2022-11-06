@@ -1,0 +1,8 @@
+#!/bin/env bash
+
+if [[ $SCRIPT_DEBUG ]]; then
+	set -x
+fi
+
+export GOPATH="$PWD/.gopath"
+export GO111MODULE=off

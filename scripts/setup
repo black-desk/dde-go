@@ -1,0 +1,9 @@
+#!/bin/env bash
+
+if [[ $SCRIPT_DEBUG ]]; then
+	set -x
+fi
+
+go get -v -d github.com/linuxdeepin/dde-daemon/...
+go get -v -d github.com/linuxdeepin/startdde/...
+go get -v -d github.com/linuxdeepin/deepin-network-proxy/...
